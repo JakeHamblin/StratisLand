@@ -1,0 +1,54 @@
+<?php
+/**
+ * File: config.php
+ * Author: Jake Hamblin
+ * Date: July 4, 2024
+ * Description: Defines constant configuration variable for easy site changes
+ * 
+ * 
+ * Information Configuration:
+ * - debug: Enable or disable PHP error reporting directly to pages
+ * - fontAwesomeKit: FontAwesome kit ID (obtained at https://fontawesome.com/kits)
+ * - Meta: An array of information used for the metadata of the site
+ * + domain: Domain of the website to be used in metadata. Ex: https://hambl.in/landing
+ * + name: Name of the author to be displayed in the metadata
+ * + logo: Logo of the author to be displayed in the metadata
+ * + description: A short description about the author of the site
+ * + color: Color of the author to be displayed in the metadata (standard HEX value without pound (#) symbol)
+ * + titleTag: A value (NULL or a string) that enables "{string} -" being prepended to meta names. If false, no tag prepended
+ * - Website: An array of color information to be used for the site design
+ * + text: Standard hex value (without pound (#) symbol) to be used for the color of text on the site
+ * + accent: Standard hex value (without pound (#) symbol) to be used for the accent color of the site
+ * + background: Standard hex value (without pound (#) symbol) to be used for the background color
+ * + foreground: Standard hex value (without pound (#) symbol) to be used for the foreground color
+ * + preloader: Standard hex value (without pound (#) symbol) to be used for the preloader background color
+ * - Author: An array of information to be displayed in HTML about the author
+*/
+    const INFORMATION = [
+        "debug" => false,
+        "fontAwesomeKit" => "",
+        "meta" => [
+            "domain" => "",
+            "name" => "Jake Hamblin",
+            "logo" => "./images/logo.png",
+            "description" => "A website developer and Computer Scientist",
+            "color" => "3fa3eb",
+            "titleTag" => NULL,
+        ],
+        "colors" => [
+            "text" => "ffffff",
+            "accent" => "3fa3eb",
+            "background" => "142430",
+            "foreground" => "0c151c",
+            "preloader" => "0c151c",
+        ],
+        "author" => [
+            "name" => "Jake Hamblin",
+            "logo" => [
+                "link" => "./images/logo.png",
+                "round" => true,
+            ],
+            "description" => "A Computer Scientist and website developer with a background in embedded systems, microprocessors, and FPGAs",
+        ],
+    ];
+?>
